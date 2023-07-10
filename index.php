@@ -1,6 +1,30 @@
 <?php 
+    class Genere {
+        public $nome;
+
+        public function __construct($nome){
+            $this->nome = $nome;
+        }
+    }
+
     class Movie {
+        public $titolo;
+        public $genere;
+        public $anno;
+        public $voto;
+        public $durata;
+
+        public function __construct($titolo, Genere $genere, $anno, $voto, $durata ){
+            $this->titolo = $titolo;
+            $this->genere = $genere;
+            $this->anno = $anno;
+            $this->voto = $voto;
+            $this->durata = $durata;
+        }
         
+        public function getMovies(){
+            $string
+        }
     }
 ?>
 
