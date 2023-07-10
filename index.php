@@ -23,9 +23,16 @@
         }
         
         public function getMovies(){
-            $string
+            $string = "Movie: ".$this->titolo.", Genere: ".$this->genere.", Anno: ".$this->anno.", Durata: ".$this->durata;
+
+            if($this->voto != NULL){
+                $string.= ", Voto: ".$this->voto;
+            }
+            return $string;
         }
     }
+
+    
 ?>
 
 <!DOCTYPE html>
